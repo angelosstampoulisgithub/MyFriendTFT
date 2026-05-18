@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D63C8E002FBBAD8500412DCC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8DFF2FBBAD8500412DCC /* HeaderView.swift */; };
 		D64DEE9D2FBA55E300036158 /* MyFriendTFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64DEE9C2FBA55E300036158 /* MyFriendTFTApp.swift */; };
 		D64DEE9F2FBA55E300036158 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64DEE9E2FBA55E300036158 /* ContentView.swift */; };
 		D64DEEA12FBA55E600036158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64DEEA02FBA55E600036158 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D63C8DFF2FBBAD8500412DCC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D64DEE992FBA55E300036158 /* MyFriendTFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFriendTFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64DEE9C2FBA55E300036158 /* MyFriendTFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendTFTApp.swift; sourceTree = "<group>"; };
 		D64DEE9E2FBA55E300036158 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D63C8DFE2FBBAD7000412DCC /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D63C8DFF2FBBAD8500412DCC /* HeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		D64DEE902FBA55E300036158 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 		D64DEEC82FBA5B1600036158 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D63C8DFE2FBBAD7000412DCC /* Header */,
 				D6689D9A2FBA641700099E2C /* Menu */,
 				D6689D972FBA612500099E2C /* Home */,
 				D6689D8E2FBA5FA600099E2C /* AlbumFlip */,
@@ -335,6 +346,7 @@
 				D6689D952FBA5FA600099E2C /* PageViewController.swift in Sources */,
 				D6689D932FBA5FA600099E2C /* Gallery.swift in Sources */,
 				D6689D942FBA5FA600099E2C /* PageCurl.swift in Sources */,
+				D63C8E002FBBAD8500412DCC /* HeaderView.swift in Sources */,
 				D64DEECD2FBA5D0200036158 /* Video.swift in Sources */,
 				D64DEE9F2FBA55E300036158 /* ContentView.swift in Sources */,
 				D6689D962FBA5FA600099E2C /* ViewController.swift in Sources */,

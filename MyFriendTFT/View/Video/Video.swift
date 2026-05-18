@@ -9,24 +9,27 @@ import SwiftUI
 import AVKit
 
 struct Video: View {
-    private var player: AVPlayer? {
+    @State private var player: AVPlayer? = {
         guard let url = Bundle.main.url(forResource: "karmen", withExtension: "mp4") else {
             print("ERROR: karmen.mp4 not found in bundle")
             return nil
         }
         return AVPlayer(url: url)
-    }
+    }()
 
     var body: some View {
-        VideoPlayer(player: player)
-            .onAppear {
-                player?.play()
-            }
-            .onDisappear {
-                player?.pause()
-            }
-            .navigationTitle("Βιντεο - Παραμύθι")
-            .navigationBarTitleDisplayMode(.inline)
+        VStack {
+            HeaderView()
+
+            VideoPlayer(player: player)
+                .onAppear {
+                    player?.seek(to: .zero)   
+                    player?.play()
+                }
+                .onDisappear {
+                    player?.pause()
+                }
+        }
     }
 }
 

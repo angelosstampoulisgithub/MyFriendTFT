@@ -13,8 +13,11 @@ struct HomeView: View {
 
     var body: some View {
         ZStack {
-            Image("MyFriendTFTBackground")
-                .resizable()
+            VStack{
+                HeaderView()
+                Image("MyFriendTFTBackground")
+                    .resizable()
+            }
         }
     }
 }

@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         ]
         
         let width = UIScreen.main.bounds.width
-        let height = UIScreen.main.bounds.height - 180
+        let height = UIScreen.main.bounds.height
         
         mainImageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
         view.addSubview(mainImageView)

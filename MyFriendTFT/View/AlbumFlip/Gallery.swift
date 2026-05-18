@@ -11,6 +11,7 @@ struct Gallery: View {
     var body: some View {
         GeometryReader{ reader in
             VStack{
+                HeaderView()
                 Color.black.overlay {
                     PageCurl()
                 }

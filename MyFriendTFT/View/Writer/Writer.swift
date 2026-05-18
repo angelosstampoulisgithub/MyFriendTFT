@@ -9,8 +9,9 @@ import SwiftUI
 
 struct Writer: View {
     var body: some View {
-        ScrollView {
             VStack(alignment: .leading, spacing: 24) {
+                HeaderView()
+                ScrollView {
 
                 Image("writer")
                     .resizable()
@@ -22,10 +23,12 @@ struct Writer: View {
                 Text("Antoine de Saint‑Exupéry")
                     .font(.largeTitle)
                     .bold()
+                    .frame(maxWidth: .infinity,alignment:.leading)
 
                 Text("1900 – 1944")
                     .font(.title3)
                     .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity,alignment:.leading)
 
                 Text("""
 Ο Antoine de Saint‑Exupéry γεννήθηκε το 1900 στη Λυών της Γαλλίας, σε μια οικογένεια με βαθιές πολιτιστικές και πνευματικές ρίζες. Από μικρή ηλικία έδειξε έντονη φαντασία, αγάπη για τις ιστορίες και μια ιδιαίτερη περιέργεια για τον κόσμο. Η παιδική του ζωή σημαδεύτηκε από την απώλεια του πατέρα του, γεγονός που τον έφερε πιο κοντά στη μητέρα του, η οποία ενθάρρυνε τη δημιουργικότητά του και την καλλιτεχνική του φύση.
